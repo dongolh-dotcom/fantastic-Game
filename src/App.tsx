@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./App.css";
 
 import Snake from "./snake";
-import MemoryGame from "./memorygame";
 
 function App() {
   const [currentGame, setCurrentGame] = useState("snake");
@@ -24,7 +23,7 @@ function App() {
 
       <div id="center">
         {currentGame === "snake" && <Snake />}
-        {currentGame === "memory" && <MemoryGame />}
+        
       </div>
     </div>
   );
