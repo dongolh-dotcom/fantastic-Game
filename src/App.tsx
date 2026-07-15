@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 import Snake from "./snake";
-import MemoryGame from "./MemoryGame";
+import MemoryGame from "./memorygame";
 
 function App() {
   const [currentGame, setCurrentGame] = useState("snake");
