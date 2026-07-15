@@ -1,20 +1,27 @@
+import { useState } from "react";
+import "./App.css";
+import Snake from "./snake";
+import MemoryGame from "./MemoryGame";
 
-
-import './App.css'
-import Snake from './snake'
 function App() {
-
+  const [game, setGame] = useState("snake");
 
   return (
-    <>
-      <section id="center">
-        <Snake/>
-        
+    <section id="center">
+      <div className="menu">
+        <button onClick={() => setGame("snake")}>
+          🐍 Snake
+        </button>
 
-      
-      </section>
-    </>
-  )
+        <button onClick={() => setGame("memory")}>
+          🧠 Memory Match
+        </button>
+      </div>
+
+      {game === "snake" && <Snake />}
+      {game === "memory" && <MemoryGame />}
+    </section>
+  );
 }
 
-export default App
+export default App;
