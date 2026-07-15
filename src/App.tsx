@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>🎮 React Mini Games</h1>
+      <h1>🎮 New React Mini Games</h1>
 
       <div className="menu">
         <button onClick={() => setCurrentGame("snake")}>
